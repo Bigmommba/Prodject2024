@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GameWorld | Home</title>
+    
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        a {
+            color: #42b883;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #38a169;
+        }
+
+        header {
+            background-color: #333;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            color: #42b883;
+            font-weight: bold;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #2c2c2c;
+            padding: 15px 0;
+        }
+
+        nav a {
+            margin: 0 20px;
+            font-size: 1.2em;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            color: #38a169;
+        }
+
+        /* Main Hero Section */
+        .hero {
+            height: 80vh;
+            background: url('https://images.unsplash.com/photo-1540154457768-e40e3f4a3aee') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .hero h2 {
+            z-index: 1;
+            font-size: 4em;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .hero p {
+            z-index: 1;
+            font-size: 1.5em;
+            margin: 15px 0;
+        }
+
+        .hero button {
+            z-index: 1;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: white;
+            background-color: #42b883;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .hero button:hover {
+            background-color: #38a169;
+        }
+
+        /* Featured Games Section */
+        .featured {
+            padding: 50px 20px;
+            background-color: #1a1a1a;
+            text-align: center;
+        }
+
+        .featured h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        .games {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .game-card {
+            background-color: #2c2c2c;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .game-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .game-card h3 {
+            margin: 15px 0;
+            color: #42b883;
+        }
+
+        .game-card p {
+            color: #bbb;
+        }
+
+        /* News Section */
+        .news {
+            background-color: #333;
+            padding: 50px 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .news h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        .news article {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .news article h3 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #42b883;
+        }
+
+        .news article p {
+            color: #bbb;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1a1a;
+            padding: 20px 0;
+            text-align: center;
+            color: #777;
+        }
+
+        footer a {
+            color: #42b883;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>GameWorld</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Games</a>
+        <a href="#">News</a>
+        <a href="#">Community</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div>
+            <h2>Welcome to GameWorld</h2>
+            <p>Your ultimate destination for gaming news, reviews, and community.</p>
+            <button>Join Now</button>
+        </div>
+    </section>
+
+    <!-- Featured Games Section -->
+    <section class="featured">
+        <h2>Featured Games</h2>
+        <div class="games">
+            <div class="game-card">
+                <img src="https://placekitten.com/300/200" alt="Game 1">
+                <h3>Epic Adventure</h3>
+                <p>Embark on a thrilling journey across uncharted lands and defeat legendary enemies.</p>
+            </div>
+            <div class="game-card">
+                <img src="https://placekitten.com/300/200" alt="Game 2">
+                <h3>Galactic Warfare</h3>
+                <p>Take control of massive starships and lead your forces to victory in space battles.</p>
+            </div>
+            <div class="game-card">
+                <img src="https://placekitten.com/300/200" alt="Game 3">
+                <h3>Fantasy Quest</h3>
+                <p>Explore enchanted forests, discover hidden treasures, and cast powerful spells.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news">
+        <h2>Latest News</h2>
+        <article>
+            <h3>New Expansion for Epic Adventure Released!</h3>
+            <p>The latest expansion adds new levels, weapons, and enemies to the already epic game. Fans are excited to explore the new content.</p>
+        </article>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 GameWorld. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+</body>
+</html>
